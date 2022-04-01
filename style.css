@@ -90,3 +90,10 @@ button {
 #button7:active, #button7.lit {
     background:yellow;
 }
+#button8 {
+    background: lightyellow;
+}
+
+#button8:active, #button8.lit {
+    background:yellow;
+}
