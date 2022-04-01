@@ -27,3 +27,6 @@ https://www.aisoutu.com/pingmian/516146
 https://www.jamiesale-cartoonist.com/free-cartoon-dog-vector-clip-art/
 https://www.jamiesale-cartoonist.com/free-cartoon-cat-vector-clip-art/
 http://clipart-library.com/free/pig-clipart-transparent.html
+https://www.seekpng.com/ipng/u2w7u2u2u2y3q8t4_animated-snake-clipart/
+https://pixabay.com/illustrations/turtle-animal-cartoon-tortoise-6002767/
+https://pixabay.com/vectors/monkey-animal-gorilla-zoo-nature-4187960/

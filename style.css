@@ -83,30 +83,42 @@ button {
 
 }
 #button5 {
-    background: lightyellow;
+    background: Wheat;
 }
 
 #button5:active, #button5.lit {
-    background:yellow;
+    font-size: 0;
+    background:Tan url(https://cdn.glitch.global/10c4817b-8659-44c4-9a8b-b4e3f3ac3844/snak.png?v=1648850541419);
+    background-size: cover;
+
 }
 #button6 {
-    background: lightyellow;
+    background: Thistle;
 }
 
 #button6:active, #button6.lit {
-    background:yellow;
+    font-size: 0;
+    background:Violet url(https://cdn.glitch.global/10c4817b-8659-44c4-9a8b-b4e3f3ac3844/pig.png?v=1648850331426);
+    background-size: cover;
+
 }
 #button7 {
-    background: lightyellow;
+    background: SkyBlue;
 }
 
 #button7:active, #button7.lit {
-    background:yellow;
+    font-size: 0;
+    background:SlateBlue url(https://cdn.glitch.global/10c4817b-8659-44c4-9a8b-b4e3f3ac3844/turtle.webp?v=1648850626103);
+    background-size: cover;
+
 }
 #button8 {
-    background: lightyellow;
+    background: lightgray;
 }
 
 #button8:active, #button8.lit {
-    background:yellow;
+    font-size: 0;
+    background:gray url(https://cdn.glitch.global/10c4817b-8659-44c4-9a8b-b4e3f3ac3844/monkey.png?v=1648850716474);
+    background-size: cover;
+
 }
