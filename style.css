@@ -42,7 +42,7 @@ button {
     background: lightgreen;
 }
 
-#button1:active {
+#button1:active, #button1.lit {
     background:green;
 }
 
@@ -50,7 +50,7 @@ button {
     background: lightblue;
 }
 
-#button2:active {
+#button2:active, #button2.lit {
     background:blue;
 }
 
@@ -58,7 +58,7 @@ button {
     background: pink;
 }
 
-#button3:active {
+#button3:active, #button3.lit {
     background:red;
 }
 
@@ -66,6 +66,6 @@ button {
     background: lightyellow;
 }
 
-#button4:active {
+#button4:active, #button4.lit {
     background:yellow;
 }
