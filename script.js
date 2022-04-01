@@ -14,6 +14,9 @@ var guessCounter = 0;
 
 var mistakes = 0;
 
+var timeLeft = 30;
+var elem = document.getElementById('some_div');
+var timerId = setInterval(countdown, 1000);
 
 function startGame() {
   //initialize game variables
@@ -25,6 +28,8 @@ function startGame() {
   document.getElementById("stopBtn").classList.remove("hidden");
   //generating random pattern
   generatePatterns();
+  elem = document.getElementById('some_div');
+  timerId = setInterval(countdown, 1000);
   playClueSequence();
 }
 
@@ -35,7 +40,7 @@ function stopGame() {
 }
 
 function generatePatterns() {
-  for(let i = 0; i < 10; i++) {
+  for(let i = 0; i < 7; i++) {
     pattern[i] = getRandomInt(8);
   }
 }
@@ -156,3 +161,15 @@ function guess(btn){
     }
   }
 }    
+
+
+
+function countdown() {
+  if (timeLeft == -1) {
+    clearTimeout(timerId);
+    loseGame();
+      } else {
+        elem.innerHTML = timeLeft + ' seconds remaining';
+        timeLeft--;
+      }
+    }
