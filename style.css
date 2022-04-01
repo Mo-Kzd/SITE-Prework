@@ -43,21 +43,21 @@ button {
   
 }
 #button1:active, #button1.lit {
-        font-size: 0;
-background:url(
-  'https://cdn.glitch.global/10c4817b-8659-44c4-9a8b-b4e3f3ac3844/tiger1.png?v=1648849535475');
-    background-size: cover;
+  font-size: 0;
+  background:green url(
+  'https://cdn.glitch.global/10c4817b-8659-44c4-9a8b-b4e3f3ac3844/tiger.png?v=1648849917070');
+  background-size: cover;
 }
 
 #button2 {
-    font-size: 20;
+  font-size: 20;
   background: lightblue;
 }
 
 #button2:active, #button2.lit {
-      font-size: 0;
-    background:url(https://cdn.glitch.global/10c4817b-8659-44c4-9a8b-b4e3f3ac3844/lion.webp?v=1648849430001);
-      background-size: cover;
+    font-size: 0;
+    background:blue url(https://cdn.glitch.global/10c4817b-8659-44c4-9a8b-b4e3f3ac3844/lion.webp?v=1648849430001);
+    background-size: cover;
 
 }
 
@@ -66,15 +66,21 @@ background:url(
 }
 
 #button3:active, #button3.lit {
-    background:red;
+    font-size: 0;
+    background:red url(https://cdn.glitch.global/10c4817b-8659-44c4-9a8b-b4e3f3ac3844/dog.png?v=1648850001308);
+    background-size: cover;
+
 }
 
 #button4 {
-    background: lightyellow;
+    background: lightyellow ;
 }
 
 #button4:active, #button4.lit {
-    background:yellow;
+    font-size: 0;
+    background:yellow url(https://cdn.glitch.global/10c4817b-8659-44c4-9a8b-b4e3f3ac3844/cat.png?v=1648850142941);
+    background-size: cover;
+
 }
 #button5 {
     background: lightyellow;

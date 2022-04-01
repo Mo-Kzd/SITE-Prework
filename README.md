@@ -22,5 +22,8 @@ This is a basic static HTML starter project you can build on however you like. N
 - Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
 
 ## Reference
-https://pngset.com/download-free-png-ibncw
+https://zh.pngtree.com/free-png-vectors/
 https://www.aisoutu.com/pingmian/516146
+https://www.jamiesale-cartoonist.com/free-cartoon-dog-vector-clip-art/
+https://www.jamiesale-cartoonist.com/free-cartoon-cat-vector-clip-art/
+http://clipart-library.com/free/pig-clipart-transparent.html
