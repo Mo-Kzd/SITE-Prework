@@ -12,11 +12,13 @@ var tonePlaying = false;
 var volume = 0.5;  //must be between 0.0 and 1.0
 var guessCounter = 0;
 
+// var to count the mistakes
 var mistakes = 0;
 
-var timeLeft = 30;
-var elem = document.getElementById('some_div');
-var timerId = setInterval(countdown, 1000);
+// var for the clock
+var timeLeft = 0;
+var elem;
+var timerId;
 
 function startGame() {
   //initialize game variables
@@ -28,11 +30,18 @@ function startGame() {
   document.getElementById("stopBtn").classList.remove("hidden");
   //generating random pattern
   generatePatterns();
+  if(timeLeft <= 0 || timeLeft != 120) {
+  timeLeft = 120;
+  elem = document.getElementById('clock');
+  timerId = setInterval(countdown, 1000);
+  }
+  
   playClueSequence();
 }
 
 function stopGame() {
   gamePlaying = false;
+  clearInterval(timerId);
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
 }
@@ -167,7 +176,7 @@ function countdown() {
     clearTimeout(timerId);
     loseGame();
       } else {
-        elem.innerHTML = timeLeft + ' seconds remaining';
+        elem.innerHTML = 'You have '+timeLeft + ' seconds remaining to finish the GAME';
         timeLeft--;
       }
 }
