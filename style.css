@@ -44,6 +44,8 @@ button {
 
 #button1:active, #button1.lit {
     background:green;
+  	content:"Play (text via css)";
+    
 }
 
 #button2 {
