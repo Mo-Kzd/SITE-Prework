@@ -12,11 +12,14 @@ var tonePlaying = false;
 var volume = 0.5;  //must be between 0.0 and 1.0
 var guessCounter = 0;
 
+var mistakes = 0;
+
 
 function startGame() {
   //initialize game variables
   progress = 0;
   gamePlaying = true;
+  mistakes = 0;
   // swap the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
@@ -145,6 +148,11 @@ function guess(btn){
       guessCounter++;
     }
   }else{
-    loseGame();
+    mistakes++;
+    if(mistakes == 3){
+          loseGame();
+    } else {
+      alert("you make "+mistakes+" miskatke(s), you have chance to get 2 mistakes");
+    }
   }
 }    
