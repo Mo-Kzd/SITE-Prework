@@ -28,8 +28,6 @@ function startGame() {
   document.getElementById("stopBtn").classList.remove("hidden");
   //generating random pattern
   generatePatterns();
-  elem = document.getElementById('some_div');
-  timerId = setInterval(countdown, 1000);
   playClueSequence();
 }
 
@@ -172,4 +170,4 @@ function countdown() {
         elem.innerHTML = timeLeft + ' seconds remaining';
         timeLeft--;
       }
-    }
+}
