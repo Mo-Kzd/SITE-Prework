@@ -39,24 +39,26 @@ button {
 }
 
 #button1 {
-    font-size: 0; 
-  background:url(
-  'https://cdn.glitch.global/10c4817b-8659-44c4-9a8b-b4e3f3ac3844/tiger.jpeg?v=1648848547003');
-    background-size: cover;}
-
-#button1:active, #button1.lit {
-    font-size: 20; 
-
-    background: green;
+  background: lightgreen;
   
+}
+#button1:active, #button1.lit {
+        font-size: 0;
+background:url(
+  'https://cdn.glitch.global/10c4817b-8659-44c4-9a8b-b4e3f3ac3844/tiger1.png?v=1648849535475');
+    background-size: cover;
 }
 
 #button2 {
-    background: lightblue;
+    font-size: 20;
+  background: lightblue;
 }
 
 #button2:active, #button2.lit {
-    background:blue;
+      font-size: 0;
+    background:url(https://cdn.glitch.global/10c4817b-8659-44c4-9a8b-b4e3f3ac3844/lion.webp?v=1648849430001);
+      background-size: cover;
+
 }
 
 #button3 {
