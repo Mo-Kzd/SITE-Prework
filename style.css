@@ -39,13 +39,16 @@ button {
 }
 
 #button1 {
-    background: lightgreen;
-}
+    font-size: 0; 
+  background:url(
+  'https://cdn.glitch.global/10c4817b-8659-44c4-9a8b-b4e3f3ac3844/tiger.jpeg?v=1648848547003');
+    background-size: cover;}
 
 #button1:active, #button1.lit {
-    background:green;
-  	content:"Play (text via css)";
-    
+    font-size: 20; 
+
+    background: green;
+  
 }
 
 #button2 {
