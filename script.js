@@ -30,8 +30,9 @@ function startGame() {
   document.getElementById("stopBtn").classList.remove("hidden");
   //generating random pattern
   generatePatterns();
-  if(timeLeft <= 0 || timeLeft != 120) {
-  timeLeft = 120;
+  // Initialize the clock
+  if(timeLeft <= 0 || timeLeft != 60) {
+  timeLeft = 60;
   elem = document.getElementById('clock');
   timerId = setInterval(countdown, 1000);
   }
@@ -41,6 +42,7 @@ function startGame() {
 
 function stopGame() {
   gamePlaying = false;
+  // clear the clock
   clearInterval(timerId);
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
@@ -173,10 +175,10 @@ function guess(btn){
 
 function countdown() {
   if (timeLeft == -1) {
-    clearTimeout(timerId);
-    loseGame();
-      } else {
-        elem.innerHTML = 'You have '+timeLeft + ' seconds remaining to finish the GAME';
-        timeLeft--;
+     clearTimeout(timerId);
+     loseGame();
+  } else {
+      elem.innerHTML = 'You have '+timeLeft + ' seconds remaining to finish the GAME';
+      timeLeft--;
       }
 }
