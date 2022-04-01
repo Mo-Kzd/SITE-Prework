@@ -4,7 +4,7 @@ const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 //Global Variables
-var pattern = [1, 2, 3, 4, 5, 6, 7, 8, 2, 4, 3, 2, 1, 2, 4];
+var pattern = [];
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
@@ -20,6 +20,8 @@ function startGame() {
   // swap the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
+  //generating random pattern
+  generatePatterns();
   playClueSequence();
 }
 
@@ -27,6 +29,18 @@ function stopGame() {
   gamePlaying = false;
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
+}
+
+function generatePatterns() {
+  for(let i = 0; i < 10; i++) {
+    pattern[i] = getRandomInt(8);
+  }
+}
+
+
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max) + 1;
 }
 
 // Sound Synthesis Functions
@@ -96,7 +110,8 @@ function playClueSequence(){
   for(let i=0;i<=progress;i++){ // for each clue that is revealed so far
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
     setTimeout(playSingleClue,delay,pattern[i]) // set a timeout to play that clue
-    clueHoldTime -= 10;
+    //update the clueHoldTime to increase the difficulties for users
+    clueHoldTime -= 20;
     delay += clueHoldTime;
     delay += cluePauseTime;
   }
