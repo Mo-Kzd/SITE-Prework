@@ -30,6 +30,9 @@ function startGame() {
   document.getElementById("stopBtn").classList.remove("hidden");
   //generating random pattern
   generatePatterns();
+  
+  clueHoldTime = 1000;
+  
   // Initialize the clock
   if(timeLeft <= 0 || timeLeft != 60) {
   timeLeft = 60;
