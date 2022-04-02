@@ -6,7 +6,7 @@ Submitted by: **ZHAODONG KANG**
 
 Time spent: **5** hours spent in total
 
-Link to project: (insert your link here,  should start with https://glitch.com...)
+Link to project: (https://glitch.com/edit/#!/canyon-early-constellation)
 
 ## Required Functionality
 
@@ -42,13 +42,21 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
+
 The first gif went through whole progress successfully
+
 ![](https://i.imgur.com/QiMTRqX.gif)
+
 The second gif shows the users are allowed to make two mistakes
+
 ![](https://i.imgur.com/eTr1tIO.gif)
+
 The third gif shows there is a time limit for the game
+
 ![](https://i.imgur.com/onjno5M.gif)
+
 The final gif shows that users could stop and start the game
+
 ![](https://i.imgur.com/uPIccA5.gif)
 
 
