@@ -24,7 +24,6 @@ function startGame() {
   //initialize game variables
   progress = 0;
   gamePlaying = true;
-  clueHoldTime = 1000;
   mistakes = 0;
   // swap the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
